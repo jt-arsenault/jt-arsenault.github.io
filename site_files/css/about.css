@@ -1,0 +1,206 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 1150px;
+    background-image: url("../images/pollen.jpg");
+    margin: auto;
+}
+
+.block{
+    background-color: white;
+    height: 800px;
+    padding: 15px;
+    
+}
+
+/* HEADERS AND TEXT START */
+
+    /* Grid Header wrapper*/
+        .headbar{
+            grid-area: headbar;
+        }
+
+        h1{
+            border-bottom: 1px solid black;
+            margin:0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+
+        h3{
+            margin: 0;
+            font-style: italic;
+            font-weight: lighter;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        h2{
+            color: forestgreen;
+        }
+
+        h2.title{
+            margin: 10px;
+            margin-left: 0px;
+            color: forestgreen;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        h4{
+            margin-top: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .abouttext{
+            opacity: 0.3;
+            transition: 0.4s;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .abouttext:hover{
+            opacity: 1;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding: 15px;
+        }
+
+/* HEADERS AND TEXT END */
+
+
+/*============================================================================*/
+
+
+/* LINKS/NAVIVATION START */
+
+    a{
+        font-weight: lighter;
+        text-decoration: none;
+        color: black;
+    /*    border: 1px black solid;*/
+        padding: 10px;
+        margin: 5px;
+        transition: 0.2s;
+
+    }
+
+    .here{
+        font-weight: lighter;
+        color: white;
+        background-color: forestgreen;
+        padding: 10px;
+        margin: 5px;
+    /*    border-radius: 5px;*/
+        opacity: 1;
+    }
+
+    .here:hover{
+        font-weight: lighter;
+        color: white;
+        background-color: forestgreen;
+        padding: 10px;
+        margin: 5px;
+    /*    border-radius: 5px;*/
+        opacity: 1;
+    }
+
+    a:hover{
+        font-weight: lighter;
+        color: white;
+        background-color: forestgreen;
+        padding: 10px;
+        margin: 5px;
+    /*    border-radius: 5px;*/
+        opacity: 1;
+    }
+
+    nav{
+        padding-top: 0px;
+        text-align: center;
+        grid-area: navbar;
+        opacity: 0.5;
+        transition: 0.15s;
+        margin: 20px;
+
+    }
+
+    nav:hover{
+        opacity: 1;
+        border-left: 0px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    /*    padding-top: 5px;*/
+    }
+
+    .bodylink{
+        background-color: transparent;
+        color: deeppink;
+        text-decoration: none;
+        opacity: 1;
+        transition: 0.4s;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .bodylink:hover{
+        color: black;
+        text-decoration: underline;
+        background-color: transparent;
+        padding: 0px;
+        margin: 0px;
+    }
+
+/* LINKS/NAVIGATION END */
+
+
+/*==============================================================================================================*/
+
+
+/* IMAGES START */
+
+img{
+    border-radius: 15px;
+    border: none;
+    opacity: 0.3;
+    transition: 0.5s;
+    
+}
+
+img:hover{
+    opacity: 1;
+    
+}
+
+.sideimage{
+    padding: 15px;
+}
+
+/*IMAGES END*/
+
+
+/*===============================================================================================================*/
+
+
+/* GRID START */
+
+.gridwrapper{
+    display: grid;
+    grid-gap: 20px;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 75px auto;
+    grid-template-areas: 
+        "headbar headbar"
+        "navbar navbar"
+        "abouttext sideimage";
+        
+}
+
+
+
+
