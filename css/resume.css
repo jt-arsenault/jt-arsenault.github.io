@@ -1,0 +1,201 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 1150px;
+    background-image: url("../images/pollen.jpg");
+    margin: auto;
+}
+
+.contents{
+    background-color: white;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    margin:0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+h3{
+    margin: 0;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2{
+    margin: 10px;
+    margin-left: 0px;
+/*    border-bottom: 1px solid gray;*/
+    color: forestgreen;
+
+    margin-right: 10px;
+}
+
+h2.title{
+    margin: 10px;
+    margin-left: 0px;
+    color: forestgreen;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h4{
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leftbox{
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+/*    height: minmax(300px auto);*/
+    width: 800px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    margin-left: 25px;
+    
+    
+}
+
+.leftbox:hover{
+    border-left: 1px solid forestgreen;
+    border-right: 1px solid forestgreen;
+    
+}
+
+nav{
+    padding-top: 0px;
+    text-align: center;
+/*    grid-area: nav;*/
+    opacity: 0.5;
+    transition: 0.15s;
+    margin-left: 10px;
+    margin-right: 10px;
+/*    transition-timing-function: ease-in;*/
+}
+
+nav:hover{
+    opacity: 1;
+   
+/*    padding-top: 5px;*/
+}
+
+a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+/*    border: 1px black solid;*/
+    padding: 10px;
+    margin: 5px;
+    transition: 0.2s;
+/*    opacity: 0.3;*/
+}
+
+a:hover{
+    font-weight: lighter;
+    color: white;
+    background-color: forestgreen;
+    padding: 10px;
+    margin: 5px;
+/*    border-radius: 5px;*/
+    opacity: 1;
+}
+
+.here{
+    font-weight: lighter;
+    color: white;
+    background-color: forestgreen;
+    padding: 10px;
+    margin: 5px;
+}
+
+.here:hover{
+    font-weight: lighter;
+    color: white;
+    background-color: forestgreen;
+    padding: 10px;
+    margin: 5px;
+}
+
+.rightbox{
+    text-align: left;
+    padding: 15px;
+    height: 300px;
+    transition: 0.2s;
+    float: right;
+
+}
+
+.rightbox:hover{
+    border-right: 1px solid forestgreen;
+    border-left: 1px solid forestgreen;
+}
+
+@keyframes extend{
+    from{height: 10px;}
+    to{height: 2045px;}
+}
+
+.timeline{
+    width: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 0px;
+    float: left;
+    position: absolute;
+    background-color: forestgreen;
+    animation-name: extend;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+.resumebody{
+    opacity: 0;
+    transition: background 1s;
+    transition: opacity 3s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.resumebody:hover{
+    background-color: lightgray;
+}
+
+.resumebody:active{
+    opacity: 1;
+}
+
+.gridwrapper{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    background-color: white;
+    grid-auto-rows: 150px 150px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "logo logo logo"
+        "logo logo logo";
+}
+
+.logo{
+    background-color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h5{
+    font-size: 25px;
+    margin-left: 25px;
+    border-bottom: 1px solid black;
+}
+
